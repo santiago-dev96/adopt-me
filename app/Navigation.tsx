@@ -15,7 +15,7 @@ function NavLinks(props: { children: ReactNode }) {
 function NavLink(props: { children: ReactNode; href: string }) {
   return (
     <li
-      className="py-1 px-4 first:pt-2 last:pb-2"
+      className="py-1 pl-2 pr-4 first:pt-2 last:pb-2"
       onClick={(e) => e.stopPropagation()}
     >
       <Link href={props.href}>{props.children}</Link>
@@ -50,7 +50,7 @@ export default function Navigation() {
       <Image src="/menu-white.svg" width={32} height={32} alt="Menu" />
 
       <div
-        className="absolute top-full mt-1 overflow-hidden right-0 bg-stone-50 text-stone-900 border-stone-400 border"
+        className="absolute z-10 top-full mt-1 overflow-hidden right-0 bg-stone-50 text-stone-900 border-stone-400 border"
         style={{
           display: isMenuOpen ? "block" : "none",
         }}
