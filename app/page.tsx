@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="p-5">
-        <AdoptedPets />
-      </div>
+      <AdoptedPets />
     </>
   );
 }

@@ -11,36 +11,18 @@ export default function Hero() {
       }}
       className="h-[calc(100vh-74px)] flex flex-col justify-center items-center"
     >
-      <h1 className="text-4xl text-center text-stone-900">
-        Adopt me!
-      </h1>
-
-      <div className="flex gap-3 mt-6">
-        <Button
-          onClick={() => {
-            window.history.pushState(null, "", "#latest-adoptions");
-            window.scrollTo({
-              top: window.innerHeight,
-              behavior: "smooth",
-            });
-          }}
-          variant="primary"
-        >
-          Latest adoptions
-        </Button>
-        <Button
-          onClick={() => {
-            window.history.pushState(null, "", "#adopt-one");
-            window.scrollTo({
-              top: 2 * window.innerHeight,
-              behavior: "smooth",
-            });
-          }}
-          variant="primary"
-        >
-          Adopt one
-        </Button>
-      </div>
+      <Button
+        onClick={() => {
+          window.history.pushState(null, "", "#adopt-one");
+          window.scrollTo({
+            top: 2 * (window.innerHeight - 74),
+            behavior: "smooth",
+          });
+        }}
+        variant="primary"
+      >
+        Adopt a pet
+      </Button>
     </section>
   );
 }
