@@ -50,7 +50,7 @@ export default function Navigation() {
       <Image src="/menu-white.svg" width={32} height={32} alt="Menu" />
 
       <div
-        className="absolute z-10 top-full mt-1 overflow-hidden right-0 bg-stone-50 text-stone-900 border-stone-400 border"
+        className="absolute z-20 top-full mt-1 overflow-hidden right-0 bg-stone-50 text-stone-900 border-stone-400 border"
         style={{
           display: isMenuOpen ? "block" : "none",
         }}
