@@ -6,3 +6,12 @@ test("Header has a logo", () => {
   const header = screen.getByAltText("Adopt Me!");
   expect(header).toBeInTheDocument();
 });
+
+test("Header renders", () => {
+  render(<Header />);
+});
+
+test("Header is a header element", () => {
+  render(<Header />);
+  screen.getByRole("banner");
+});

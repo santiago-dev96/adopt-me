@@ -7,6 +7,13 @@ test("Navigation has a menu button", () => {
   expect(button).toBeInTheDocument();
 });
 
+test("Navigation has a nav element when opened", async () => {
+  render(<Navigation />);
+  const button = screen.getByRole("button");
+  fireEvent.click(button);
+  await screen.findByRole("navigation");
+});
+
 test("Navigation has a register link when opened", async () => {
   render(<Navigation />);
   const button = screen.getByRole("button");
