@@ -30,6 +30,7 @@ export default function Footer() {
             <Anchor
               href="https://www.instagram.com"
               aria-label="Adopt me! Inc. on Instagram"
+              target="_blank"
             >
               <Image
                 src="/instagram-white.svg"

@@ -62,3 +62,11 @@ test("Footer has a link to instagram", () => {
   });
   expect(link).toHaveAttribute("href", "https://www.instagram.com");
 });
+
+test("Footer link to instagram hast target=_blank", () => {
+  render(<Footer />);
+  const link = screen.getByRole("link", {
+    name: /adopt me! inc\. on instagram/i,
+  });
+  expect(link).toHaveAttribute("target", "_blank");
+});
