@@ -1,9 +1,9 @@
 import { ButtonHTMLAttributes } from "react";
 import classNames from "classnames";
 
-const base = "uppercase font-bold py-2 px-4 shadow-xl";
+export const base = "uppercase font-bold py-2 px-4 shadow-xl";
 
-const variants = {
+export const variants = {
   primary: "bg-purple-700 text-white",
 };
 

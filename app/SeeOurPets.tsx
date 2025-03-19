@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "@/app/_components/Button";
+import Anchor from "@/app/_components/Anchor";
 
 export default function SeeOurPets() {
   return (
@@ -16,7 +16,7 @@ export default function SeeOurPets() {
         height={350}
         alt="Pets"
       />
-      <Button variant="primary">Adopt one</Button>
+      <Anchor next href="/pets" variant="primaryButton">Adopt one</Anchor>
     </section>
   );
 }

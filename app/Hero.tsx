@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/app/_components/Button";
+import Anchor from "@/app/_components/Anchor";
 
 export default function Hero() {
   return (
@@ -11,18 +11,13 @@ export default function Hero() {
       }}
       className="h-[calc(100vh-74px)] flex flex-col justify-center items-center"
     >
-      <Button
-        onClick={() => {
-          window.history.pushState(null, "", "#adopt-one");
-          window.scrollTo({
-            top: 2 * (window.innerHeight - 74),
-            behavior: "smooth",
-          });
-        }}
-        variant="primary"
+      <Anchor
+        next
+        href="/pets"
+        variant="primaryButton"
       >
         Adopt a pet
-      </Button>
+      </Anchor>
     </main>
   );
 }

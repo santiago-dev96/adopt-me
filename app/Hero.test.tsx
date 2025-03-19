@@ -10,7 +10,8 @@ test("Hero is a main element", () => {
   screen.getByRole("main");
 });
 
-test("Hero has a button to navigate to the list of available pets", () => {
+test("Hero has an anchor to navigate to the list of available pets", () => {
   render(<Hero />);
-  screen.getByRole("button", { name: /adopt a pet/i });
+  const link = screen.getByRole("link", { name: /adopt a pet/i });
+  expect(link).toHaveAttribute("href", "/pets");
 });

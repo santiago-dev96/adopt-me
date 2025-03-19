@@ -21,7 +21,8 @@ test("SeeOurPets has an image", () => {
   screen.getByRole("img");
 });
 
-test("SeeOurPets has a CTA button", () => {
+test("SeeOurPets has a link to pets", () => {
   render(<SeeOurPets />);
-  screen.getByRole("button", { name: /adopt one/i });
+  const link = screen.getByRole("link", { name: /adopt one/i });
+  expect(link).toHaveAttribute("href", "/pets");
 });
