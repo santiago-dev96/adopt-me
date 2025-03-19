@@ -4,7 +4,7 @@ import Button from "@/app/_components/Button";
 
 export default function Hero() {
   return (
-    <section
+    <main
       style={{
         background:
           "url('https://placehold.co/400x400/jpg?text=Hero+Image') no-repeat center/cover",
@@ -23,6 +23,6 @@ export default function Hero() {
       >
         Adopt a pet
       </Button>
-    </section>
+    </main>
   );
 }
