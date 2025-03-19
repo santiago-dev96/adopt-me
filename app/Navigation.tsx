@@ -59,7 +59,8 @@ export default function Navigation() {
           <NavLinks>
             <NavLink href="/register">Register</NavLink>
             <NavLink href="/login">Login</NavLink>
-            <NavLink href="/">Pets</NavLink>
+            <NavLink href="/pets">Pets</NavLink>
+            <NavLink href="/shelters">Shelters</NavLink>
             <NavLink href="/rules">Rules</NavLink>
             <NavLink href="/impact">Impact</NavLink>
           </NavLinks>

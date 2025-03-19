@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AnchorHTMLAttributes } from "react";
 import { base as buttonBase, variants as buttonVariants } from "./Button";
 import classNames from "classnames";
+import { UrlObject } from "url";
 
 const variants = {
   default: "",
@@ -12,6 +13,7 @@ export default function Anchor(
   props: AnchorHTMLAttributes<HTMLAnchorElement> & {
     next?: boolean;
     variant?: keyof typeof variants;
+    href: string | UrlObject;
   },
 ) {
   const {
@@ -22,10 +24,6 @@ export default function Anchor(
     variant = "default",
     ...rest
   } = props;
-
-  if (!href) {
-    throw new Error("An Anchor component must have an href attribute");
-  }
 
   return next
     ? (

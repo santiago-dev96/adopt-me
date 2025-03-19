@@ -16,7 +16,3 @@ test("Anchor displays its children", () => {
   render(<Anchor href="#">Click me</Anchor>);
   screen.getByRole("link", { name: "Click me" });
 });
-
-test('Anchor throws an error when no "href" attribute is provided', () => {
-  expect(() => render(<Anchor>Click me</Anchor>)).toThrow();
-});

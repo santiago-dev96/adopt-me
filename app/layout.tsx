@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -9,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Adopt Me!",
-  description: "Web app for pet adoption.",
+  title: "Adopt me!",
+  description: "Portal for pet adoption.",
 };
 
 export default function RootLayout({
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className="pt-[74px]">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
